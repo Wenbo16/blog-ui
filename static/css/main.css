@@ -1,0 +1,114 @@
+
+/*header*/
+header {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    border: none;
+    background: #333;
+    color: #eee;
+    padding: 15px 45px;
+    cursor: pointer;
+}
+
+nav {
+    height: 50px;
+    padding: 0.2em 0;
+    background: #ccc;
+}
+
+nav .logo {
+    float: left;
+    margin: 0 0 0 3%;
+    line-height: inherit;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+nav .logo a {
+    color: #fff;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    /* ul has a default margin */
+    margin: 0;
+}
+
+nav ul li, nav .logo {
+    display: inline-block;
+    margin-right: 20px;
+    /*设置line-height之后文字会垂直方向居中*/
+    line-height: 50px;
+}
+
+nav ul li a {
+    /* change to inline-block to get a block hover, width not work, height works*/
+    display: inline-block;
+    line-height: inherit;
+    height: inherit;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    border-bottom: 3px solid #fff;
+}
+
+nav ul li a.active {
+    border-bottom: 3px solid #fff;
+}
+
+.banner {
+    height: 800px;
+    background: #777;
+}
+
+.banner .inner {
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+    text-align: center;
+}
+
+.banner .inner h1 {
+    max-width: 300px;
+    /* h1 能撑开父元素 */
+    margin: 0 auto;
+    padding: 5% 0;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.sub-heading {
+    line-height: 30px;
+    margin: 15px 0;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.banner .inner .more {
+    margin-top: 280px;
+    /* margin-top: 30%; */
+}
+
+
+
+.banner button {
+    padding: 14px 40px;
+    /* margin: 20% 0 10% 0; */
+
+}
+
+/*end of header*/
