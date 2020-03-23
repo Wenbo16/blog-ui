@@ -117,16 +117,6 @@ header {
     margin-top: 60px;
  }
 
-.section-one .wrapper .icon-group .icon {
-    display: inline-block;
-    transform: rotate(45deg);
-    width: 100px;
-    height: 100px;
-    margin: 0 5%;
-    box-shadow: 0 0 8px #217972;
-    /*border: 1px solid #5bb7d2;*/
-    /*background-color: grey;*/
-}
 
 .section-one .wrapper .icon-group .icon a {
     display: inline-block;
@@ -406,3 +396,4 @@ article {
     line-height: 2;
     text-align: center;
 }
+

@@ -1,19 +1,19 @@
 ;$(function(){
     'use strict'
 
-    let slideBar = $(".slideBar"),
+    let sideBar = $(".sidebar"),
         mask = $(".mask"),
-        showSlideBar = $(".showSlideBar"),
+        sideBarTrigger = $(".sidebar-trigger"),
         backToTop = $(".back-to-top");
     
-    function showBar() {
+    function showSideBar() {
         mask.fadeIn(); //显示遮罩区
-        slideBar.css('right', 0);
+        sideBar.css('right', 0);
     }
 
-    function hideBar() {
+    function hideSideBar() {
         mask.fadeOut();
-        slideBar.css('right', - slideBar.width())
+        sideBar.css('right', - sideBar.width())
     }
 
     function backTop() {
@@ -31,8 +31,8 @@
     //模拟页面滚动事件
     $(window).trigger('scroll');
 
-    showSlideBar.on('click', showBar);//点击更多显示slide
-    mask.on('click', hideBar);//点击遮罩层隐藏slide
+    sideBarTrigger.on('click', showSideBar);//点击更多显示slide
+    mask.on('click', hideSideBar);//点击遮罩层隐藏slide
     backToTop.on('click', backTop);//返回顶部事件
 
 });
