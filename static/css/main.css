@@ -19,8 +19,8 @@ button {
 
 nav {
     height: 50px;
-    padding: 0.2rem 0;
-    background-color: transparent;
+    /* padding: 0.2rem 0;
+    background-color: transparent; */
 }
 
 h1 {
@@ -351,8 +351,8 @@ ul.share-group {
     position: fixed;
     top: 0;
     bottom: 0;  /*or use height: 100% */
-    right: -280px;
-    width: 280px;
+    right: 0;
+    width: 0;
     background: #383838;
     color: #fff;
     padding: 20px 0;

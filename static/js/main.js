@@ -2,18 +2,18 @@
     'use strict'
 
     let sideBar = $(".sidebar"),
-        mask = $(".mask"),
+        mask = document.getElementsByClassName('mask')[0],
         sideBarTrigger = $(".sidebar-trigger"),
         backToTop = $(".back-to-top");
     
     function showSideBar() {
-        mask.fadeIn(); //显示遮罩区
-        sideBar.css('right', 0);
+        mask.style.display="block"; //显示遮罩区
+        sideBar.css('width', '280px');
     }
 
     function hideSideBar() {
-        mask.fadeOut();
-        sideBar.css('right', - sideBar.width())
+        mask.style.display="none"
+        sideBar.css('width', '0')
     }
 
     function backTop() {
@@ -32,7 +32,7 @@
     $(window).trigger('scroll');
 
     sideBarTrigger.on('click', showSideBar);//点击更多显示slide
-    mask.on('click', hideSideBar);//点击遮罩层隐藏slide
+    mask.addEventListener('click', hideSideBar);//点击遮罩层隐藏slide
     backToTop.on('click', backTop);//返回顶部事件
 
 });
